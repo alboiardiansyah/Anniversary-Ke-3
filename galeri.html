@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri Romantis</title>
+  <link rel="stylesheet" href="galeri.css">
+</head>
+<body>
+
+  <!-- Background Musik -->
+  <audio id="bgMusic" loop>
+    <source src="assets/music/romantic.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Tombol Musik -->
+  <button id="musicBtn">🎵 Play Music</button>
+    <nav class="navbar">
+        <div class="logo">Love Story</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li> 
+            <li><a href="index.html">Home</a></li>  
+        </ul>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+  <header>
+    <h1>💖 Kenangan Indah 💖</h1>
+    <p>Galeri cinta yang menyimpan kenangan terindah.</p>
+  </header>
+
+  <!-- Efek Hati Mengambang -->
+  <div id="floatingHearts"></div>
+
+  <!-- Galeri Foto -->
+  <section class="gallery">
+    <div class="gallery-grid" id="galleryGrid"></div>
+  </section>
+
+  <!-- Tombol Load More -->
+  <div class="load-more-container">
+    <button id="loadMoreBtn">💗 Tambahkan Kenangan</button>
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img id="lightbox-img" src="" alt="Tampilan Besar">
+    <p id="lightbox-caption"></p>
+    <button id="favoriteBtn">❤️ Favorit</button>
+  </div>
+
+  <script src="galeri.js"></script>
+</body>
+</html>

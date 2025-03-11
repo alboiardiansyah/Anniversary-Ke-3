@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perjalanan Cinta</title>
+  <!-- Link ke file CSS eksternal -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <!-- Peta -->
+  <div id="map"></div>
+  <!-- Tombol Kontrol -->
+  <div class="controls">
+    <button id="startBtn">Mulai Perjalanan</button>
+    <button id="pauseBtn">Pause</button>
+    <button id="resumeBtn">Lanjutkan</button>
+    <button id="resetBtn">Reset</button>
+  </div>
+
+  <!-- Modal untuk informasi lokasi -->
+  <div id="locationModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3 id="modalTitle"></h3>
+      <img id="modalImage" src="" alt="Lokasi" style="width:100%; border-radius:10px;">
+      <p id="modalDescription"></p>
+    </div>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <!-- Link ke file JavaScript eksternal -->
+  <script src="script.js"></script>
+</body>
+</html>
